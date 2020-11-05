@@ -8,7 +8,7 @@ const InstructionsModal = props => {
     modalVisible,
     style,
     instructions,
-    showOkButton = false,
+    showOkButton = true,
     handleCancel,
     handleOk,
   } = props;
@@ -35,7 +35,7 @@ const InstructionsModal = props => {
         <p style={style}>{instructions}</p>
         {showOkButton && (
           <Button onClick={handleCancel} className="accept-button">
-            I Accept!!!
+            Let's go!
           </Button>
         )}
       </Modal>
