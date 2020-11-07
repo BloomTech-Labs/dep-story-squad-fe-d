@@ -26,6 +26,16 @@ const PointShare = props => {
         message: 'You may only allocate 100 points!',
       });
       return;
+    } else if (totalPoints > 0) {
+      notification.error({
+        message: 'You have points remaining to distribute!',
+      });
+      return;
+    } else if (totalPoints === 0) {
+      notification.success({
+        message: 'Success! You will now be matched up.',
+      });
+      return;
     }
     setTeamPoints([
       {
