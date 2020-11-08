@@ -61,3 +61,14 @@ export const setResults = () => {
     return { err };
   }
 };
+
+export const resetGameForTesting = () => {
+  try {
+    return apiAuthPut('/mod/reset').then(res => {
+      return res;
+    });
+  } catch (err) {
+    console.log(err);
+    return { err };
+  }
+};
