@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'; 
+import React, { useEffect, useState } from 'react';
 
 import {
   getCohorts,
@@ -7,6 +7,7 @@ import {
   setClusters,
   setFaceoffs,
   setResults,
+  resetGameForTesting,
 } from '../../../api/moderation';
 
 import { Button, Layout, PageHeader, Select, Form, Row, Card, Col } from 'antd';
@@ -80,6 +81,13 @@ const ModerationTest = props => {
     });
   };
 
+  // Moderator can reset the game to before cluster generation
+  const reset = () => {
+    resetGameForTesting().then(res => {
+      console.log(res);
+    });
+  };
+
   return (
     <Layout className="moderation-page">
       <PageHeader>
@@ -109,6 +117,9 @@ const ModerationTest = props => {
                 </Button>
                 <Button type="default" onClick={results}>
                   Generate Results
+                </Button>
+                <Button type="default" onClick={reset}>
+                  Reset Game
                 </Button>
               </Form.Item>
             </Form.Item>
