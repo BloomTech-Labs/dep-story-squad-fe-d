@@ -35,7 +35,6 @@ const PointShare = props => {
       notification.success({
         message: 'Success! You will now be matched up.',
       });
-      return;
     }
     setTeamPoints([
       {
