@@ -4,24 +4,23 @@ import { Header } from '../../common';
 import { Row, Col, Button } from 'antd';
 import { useHistory } from 'react-router-dom';
 import FaceoffContent from './FaceoffContent';
-
 import { getGameVotes } from '../../../api';
-
 const RenderMatchUp = props => {
   const [faceoffs, setFaceoffs] = useState([]);
   const [numberOfTimesVoted, setNumberOfTimesVoted] = useState(4);
   const { authState } = useOktaAuth();
   const { push } = useHistory();
-
   useEffect(() => {
     setFaceoffs(props.squad);
   }, [props]);
-
   const handleVote = e => {
     e.preventDefault();
     push('/child/squad-vote');
   };
-
+  const backButton = e => {
+    e.preventDefault();
+    push('/child/dashboard');
+  };
   useEffect(() => {
     getGameVotes(authState, props.squad[0].SquadID, props.child.memberId).then(
       res => {
@@ -30,7 +29,6 @@ const RenderMatchUp = props => {
     );
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
   return (
     <>
       <Header displayMenu={true} title="The Matchup" />
@@ -45,7 +43,6 @@ const RenderMatchUp = props => {
               />
             )}
           </Col>
-
           <Col className="red-box" xs={24} sm={11}>
             {faceoffs[1] && (
               <FaceoffContent
@@ -66,7 +63,6 @@ const RenderMatchUp = props => {
               />
             )}
           </Col>
-
           <Col className="blue-box" xs={24} sm={13}>
             {faceoffs[3] && (
               <FaceoffContent
@@ -77,9 +73,9 @@ const RenderMatchUp = props => {
             )}
           </Col>
         </Row>
-
-        <Button className="back-button">Back</Button>
-
+        <Button className="back-button" onClick={backButton}>
+          Back
+        </Button>
         <Button className="vote-button" onClick={handleVote}>
           Vote!
         </Button>
