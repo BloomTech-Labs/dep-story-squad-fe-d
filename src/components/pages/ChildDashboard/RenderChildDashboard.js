@@ -1,4 +1,4 @@
-import React, { useState } from 'react'; 
+import React, { useState } from 'react';
 import { Header } from '../../common';
 import { Row, Col } from 'antd';
 import { useHistory } from 'react-router-dom';
@@ -23,6 +23,10 @@ const RenderChildDashboard = props => {
 
   const handleFaceoffs = e => {
     push('/child/match-up');
+  };
+
+  const handleResults = e => {
+    push('/child/results');
   };
 
   return (
@@ -53,6 +57,7 @@ const RenderChildDashboard = props => {
               className="child-dash-img"
               src={change_your_avatar}
               alt="Change Your Avatar Button"
+              onClick={handleResults}
             />
           </Col>
         </Row>
