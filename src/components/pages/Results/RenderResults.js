@@ -1,26 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Header } from '../../common';
-import { Row, Col, Button } from 'antd';
-import { useHistory } from 'react-router-dom';
+import { Row, Col } from 'antd';
 import ResultsContent from './ResultsContent';
 const RenderResults = props => {
   const [faceoffs, setFaceoffs] = useState([]);
-  const { push } = useHistory();
 
   useEffect(() => {
     setFaceoffs(props.squad);
     console.log(props.squad);
   }, [props]);
-
-  const handleVote = e => {
-    e.preventDefault();
-    push('/child/squad-vote');
-  };
-
-  const backButton = e => {
-    e.preventDefault();
-    push('/child/dashboard');
-  };
 
   return (
     <>
@@ -42,12 +30,6 @@ const RenderResults = props => {
             {faceoffs[3] && <ResultsContent content={faceoffs[3]} />}
           </Col>
         </Row>
-        <Button className="back-button" onClick={backButton}>
-          Back
-        </Button>
-        <Button className="vote-button" onClick={handleVote}>
-          Vote!
-        </Button>
       </div>
     </>
   );
