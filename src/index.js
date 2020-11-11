@@ -45,6 +45,7 @@ import { JoinTheSquad } from './components/pages/JoinTheSquad';
 import { PointShare } from './components/pages/PointShare';
 import { MatchUp } from './components/pages/MatchUp';
 import { VotingPage } from './components/pages/VotingPage';
+import { Results } from './components/pages/Results';
 
 // Note: for demo purposes ONLY
 import ModerationTest from './components/pages/ModerationTest/ModerationTest';
@@ -157,9 +158,12 @@ function App() {
         <SecureRoute
           path="/child/match-up"
           exact
-          component={() => (
-            <MatchUp LoadingComponent={ChildLoadingComponent} />
-          )}  
+          component={() => <MatchUp LoadingComponent={ChildLoadingComponent} />}
+        />
+        <SecureRoute
+          path="/child/results"
+          exact
+          component={() => <Results LoadingComponent={ChildLoadingComponent} />}
         />
         <SecureRoute
           path="/child/squad-vote"
