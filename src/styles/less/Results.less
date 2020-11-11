@@ -1,0 +1,97 @@
+.results-container {
+    position: relative;
+  
+    .ant-row {
+      [class^='ant-col'] {
+        height: 35vh;
+        border: 5px solid @header-nero;
+        display: flex;
+        .faceoff {
+          flex-grow: 1;
+  
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-around;
+  
+          .points {
+            position: absolute;
+            bottom: 0;
+            font-size: xx-large;
+            font-weight: bold;
+          }
+  
+          .points-left {
+            position: absolute;
+            bottom: 0;
+            left: 36%;
+            font-size: xx-large;
+            font-weight: bold;
+          }
+  
+          .points-right {
+            position: absolute;
+            bottom: 0;
+            left: 56%;
+            font-size: xx-large;
+            font-weight: bold;
+          }
+  
+          .greyed-out {
+            opacity: 0.5;
+          }
+  
+          & > img {
+            height: 80%;
+          }
+  
+          .sub {
+            padding: 1.5vh;
+            max-width: 13.5vw;
+            flex-grow: 1;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            .child-info {
+              img {
+                max-height: 30px;
+                margin-right: 1.5vw;
+              }
+            }
+            .submission-preview {
+              flex-grow: 1;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              img {
+                max-width: 100%;
+              }
+            }
+          }
+        }
+  
+        .winner-left {
+          .winnerGradient('right');
+        }
+  
+        .winner-right {
+          .winnerGradient('left');
+        }
+      }
+    }
+  
+    .green-box {
+      background-color: @conifer;
+    }
+  
+    .red-box {
+      background: @burnt-sienna;
+    }
+  
+    .yellow-box {
+      background: @bright-sun;
+    }
+  
+    .blue-box {
+      background: @boston-blue;
+    }
+}
