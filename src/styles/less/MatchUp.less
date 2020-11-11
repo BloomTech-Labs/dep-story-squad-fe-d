@@ -3,7 +3,7 @@
 
   .ant-row {
     [class^='ant-col'] {
-      height: 35vh;
+      height: 31.5vh;
       border: 5px solid @header-nero;
       display: flex;
       .faceoff {
@@ -95,17 +95,23 @@
     background: @boston-blue;
   }
 
-  .back-button {
-    .orangeButtonStyle();
-    position: absolute;
-    left: 2vh;
-    bottom: 2vh;
-  }
-
-  .vote-button {
-    .orangeButtonStyle();
-    position: absolute;
-    right: 2vh;
-    bottom: 2vh;
+  footer {
+    height: 7.1vh;
+    background: black;
+  
+    .back-button {
+      .orangeButtonStyle();
+      position: absolute;
+      left: 20vh;
+      bottom: 1vh;
+    }
+  
+    .vote-button {
+      .orangeButtonStyle();
+      position: absolute;
+      right: 20vh;
+      bottom: 1vh;
+    }
   }
 }
+
