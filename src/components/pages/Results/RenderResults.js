@@ -13,7 +13,7 @@ const RenderResults = props => {
   return (
     <>
       <Header displayMenu={true} title="The Results" />
-      <div className="matchup-container">
+      <div className="results-container">
         <Row className="toprow">
           <Col className="green-box" xs={24} sm={13}>
             {faceoffs[0] && <ResultsContent content={faceoffs[0]} />}
