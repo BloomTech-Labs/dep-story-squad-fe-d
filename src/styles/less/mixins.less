@@ -36,3 +36,13 @@
 }
 .matchupBoxesStyle() {
 }
+
+.winnerGradient(@direction, @from: rgba(0, 0, 0, 0), @to: #383737) {
+  background: linear-gradient(
+    to ~"@{direction}",
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 50%,
+    @to 50%,
+    @to 100%
+  );
+}
