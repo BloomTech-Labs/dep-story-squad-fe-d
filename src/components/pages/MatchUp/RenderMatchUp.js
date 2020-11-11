@@ -73,12 +73,14 @@ const RenderMatchUp = props => {
             )}
           </Col>
         </Row>
-        <Button className="back-button" onClick={backButton}>
-          Back
-        </Button>
-        <Button className="vote-button" onClick={handleVote}>
-          Vote!
-        </Button>
+        <footer>
+          <Button className="back-button" onClick={backButton}>
+            Back
+          </Button>
+          <Button className="vote-button" onClick={handleVote}>
+            Vote!
+          </Button>
+        </footer>
       </div>
     </>
   );
