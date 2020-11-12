@@ -81,6 +81,7 @@ const RenderMissionControl = props => {
         instructions={instructionText}
         style={{ fontSize: '2rem' }}
         showOkButton={showButton}
+        buttonText={hasWritten && hasDrawn ? 'Ok' : 'Yes!'}
       />
       <div className="mission-container">
         <Row className="main-row">
