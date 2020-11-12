@@ -41,6 +41,7 @@ const RenderChildDashboard = props => {
           setModalVisible(false);
         }}
         instructions={modalInstructions.childDash}
+        buttonText="Let's go!"
       />
       <div className="dash-container">
         <Row className="toprow">
