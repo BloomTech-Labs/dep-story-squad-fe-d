@@ -9,6 +9,7 @@ const InstructionsModal = props => {
     style,
     instructions,
     showOkButton = true,
+    buttonText = 'Ok',
     handleCancel,
     handleOk,
   } = props;
@@ -35,7 +36,7 @@ const InstructionsModal = props => {
         <p style={style}>{instructions}</p>
         {showOkButton && (
           <Button onClick={handleCancel} className="accept-button">
-            Let's go!
+            {buttonText}
           </Button>
         )}
       </Modal>
