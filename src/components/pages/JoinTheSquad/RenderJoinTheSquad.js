@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'; 
+import React, { useEffect } from 'react';
 import { Header } from '../../common';
 import { Col, Button } from 'antd';
 import { useHistory } from 'react-router-dom';
@@ -6,23 +6,20 @@ import { useOktaAuth } from '@okta/okta-react/dist/OktaContext';
 import Squadup from '../../../assets/images/Squadup.svg';
 import wordbubble from '../../../assets/images/match_up_images/wordbubble.svg';
 import wordBubbleright from '../../../assets/images/match_up_images/wordBubbleright.svg';
-import {getChildTeam} from '../../../api';
+import { getChildTeam } from '../../../api';
 import { connect } from 'react-redux';
 import { child } from '../../../state/actions';
 
-
 const RenderJoinTheSquad = props => {
   const { push } = useHistory();
-  const {authState} = useOktaAuth();
+  const { authState } = useOktaAuth();
 
   useEffect(() => {
-    getChildTeam(authState, props.child.id).then(
-      res => {
-        props.setMemberId(res[props.child.id]);
-        props.setTeamSubmissions(res);
-      }
-    );
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    getChildTeam(authState, props.child.id).then(res => {
+      props.setMemberId(res[props.child.id]);
+      props.setTeamSubmissions(res);
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [authState]);
 
   const teamVote = e => {
@@ -62,19 +59,19 @@ const RenderJoinTheSquad = props => {
               alt="Blast Character Background"
             />
           </div>
-          <div className="button">
-            <Button
-              selection="#eb7d5bbb"
-              className="sharePoints"
-              type="primary"
-              size="large"
-              onClick={teamVote}
-            >
-              Share Points
-            </Button>
-          </div>
         </Col>
       </div>
+      <footer>
+        <Button
+          selection="#eb7d5bbb"
+          className="sharePoints"
+          type="primary"
+          size="large"
+          onClick={teamVote}
+        >
+          Share Points
+        </Button>
+      </footer>
     </>
   );
 };
