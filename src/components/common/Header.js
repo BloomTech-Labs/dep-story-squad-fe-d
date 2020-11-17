@@ -23,7 +23,7 @@ const ChildMenu = props => {
 
   return (
     <Menu {...props}>
-      <p>Hello, {setChild}</p>
+      <h4> Hi, {setChild}!</h4>
       <Menu.Item key="1">
         <Link to="/child/dashboard">Home</Link>
       </Menu.Item>
