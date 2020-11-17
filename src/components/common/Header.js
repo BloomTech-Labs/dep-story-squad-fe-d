@@ -4,7 +4,7 @@ import { Link, useHistory } from 'react-router-dom';
 import { Button, Dropdown, Menu } from 'antd';
 import { CountDown } from 'ant-design-pro/lib/CountDown';
 import { MenuOutlined } from '@ant-design/icons';
-import { connect } from 'react-redux';
+import { connect, useSelector } from 'react-redux';
 import { global } from '../../state/actions';
 import { useOktaAuth } from '@okta/okta-react/dist/OktaContext';
 import BackButton from '../common/BackButton';
@@ -18,8 +18,12 @@ const ChildMenu = props => {
     props.clearUsers();
     push('/');
   };
+
+  const setChild = useSelector(state => state.child.name);
+
   return (
     <Menu {...props}>
+      <h4> Hi, {setChild}!</h4>
       <Menu.Item key="1">
         <Link to="/child/dashboard">Home</Link>
       </Menu.Item>
