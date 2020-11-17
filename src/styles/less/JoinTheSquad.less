@@ -2,100 +2,121 @@
 @import '~antd/lib/style/themes/default.less';
 
 .JoinSquadContainer {
-  height: 70vh;
+  height: 62.9vh;
   display: flex;
   @media @tablet {
     flex-direction: column;
   }
-}
 
-.joinSquad1 {
-  background: #b5d33d;
-  display: flex;
-  justify-content: center;
-}
-.joinSquad2 {
-  background-color: #fed23f;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
+  .joinSquad1, .joinSquad2 {
+    position: relative;
+    border: 5px solid #292929;
+    height: 100%;
+    display: flex;
+    justify-content: center;  
+  }
 
-.joinSquad1,
-.joinSquad2 {
-  border: 5px solid #292929;
-  position: relative;
-}
+  .joinSquad1 {
+    background-color: #b5d33d;
+  }
+    
+  .joinSquad2 {
+    background-color: #fed23f;
+  }  
+    
+  .imgContain1, .imgContain2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    @media @tablet {
+      padding-left: 5%;
+      padding-bottom: 0%;
+    }  
+  }    
+  
+  img {
+    max-width: 100%;
+  }        
+  
+  .text {
+    position: absolute;
+    z-index: 40;
+    margin-top: 17%;
+    margin-left: -5%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+  } 
 
-.imgContain1 {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  @media @tablet {
-    padding-left: 5%;
-    padding-bottom: 0%;
+  .text2 {
+    position: absolute;
+    z-index: 80;
+    margin-top: 17%;
+    margin-left: 52%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+  }
+
+  .wordBubble {
+    position: relative;
+    z-index: 30;
+    margin-left: -38%;            
+  }  
+
+  .wordBubble2 {
+    position: relative;
+    z-index: 30;
+    margin-left: 38%;
+  }
+
+  .star, .star2 {
+    position: relative; 
+    z-index: 50;
+    margin-top: -20%;
+  }
+
+  .avatar {
+    position: absolute;
+    z-index: 60;
+    margin-top: 45%;
+    margin-left: 23%;
+    height: 200px;
+    width: 200px;
+  }
+
+  .avatar2 {
+    position: absolute;
+    z-index: 60;
+    margin-top: 45%;
+    margin-left: 28%;
+    height: 200px;
+    width: 200px;
   }
 }
 
-.imgContain2 {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-.button {
-  display: flex;
-  justify-content: flex-end;
-}
-img {
-  max-width: 100%;
-}
-
-.star {
-  z-index: 1;
-  margin-top: 20%;
-}
-
-.wordBubble {
-  z-index: 2;
-  position: fixed;
-}
-
-.wordBubble2 {
-  z-index: 2;
-  position: fixed;
-  margin-left: 20%;
-  margin-top: 0%;
-}
-
-.text {
-  z-index: 3;
-  position: fixed;
-  margin-top: 5%;
-  margin-left: 4%;
-  font-family: 'Nunito', sans-serif;
-  font-size: 1rem;
-}
-.text2 {
-  z-index: 3;
-  position: fixed;
-  margin-top: 5%;
-  margin-left: 24%;
-  font-family: 'Nunito', sans-serif;
-  font-size: 1rem;
-}
 footer {
   height: 7.1vh;
-  background: black;
-
+  background-color: @header-nero;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  
+  .instructionsSharePoints {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    color: @white-smoke;
+    margin: 0;
+  }
+  
   .sharePoints {
     background: #eb7d5b;
     border-color: #eb7d5b;
-    position: absolute;
-    right: 1.5vh;
-    bottom: -5.5vh;
+
     &:hover {
       background-color: #eb7d5bbb;
       border-color: #eb7d5bbb;
     }
   }
 }
+
+
