@@ -28,7 +28,7 @@ const RenderJoinTheSquad = props => {
 
   return (
     <>
-      <Header title="JOIN THE SQUAD" />
+      <Header displayMenu={true} title="JOIN THE SQUAD" />
       <div className="JoinSquadContainer">
         <Col className="joinSquad1" xs={24} sm={12}>
           <div className="imgContain1">
@@ -40,6 +40,11 @@ const RenderJoinTheSquad = props => {
               className="star"
               src={Squadup}
               alt="Blast Character Background"
+            />
+            <img
+              className="avatar"
+              src={props.team.child1.AvatarURL}
+              alt="Child 1's Avatar"
             />
           </div>
         </Col>
@@ -54,16 +59,24 @@ const RenderJoinTheSquad = props => {
               alt="word bubble"
             />
             <img
-              className="star"
+              className="star2"
               src={Squadup}
               alt="Blast Character Background"
+            />
+            <img
+              className="avatar2"
+              src={props.team.child2.AvatarURL}
+              alt="Child 2's Avatar"
             />
           </div>
         </Col>
       </div>
       <footer>
+        <p className="instructionsSharePoints">
+          Now it's time to distribute points between you and your teammate!
+        </p>
         <Button
-          selection="#eb7d5bbb"
+          selection="#eb7d5b"
           className="sharePoints"
           type="primary"
           size="large"
@@ -80,6 +93,7 @@ export default connect(
   state => ({
     team: state.team,
     child: state.child,
+    avatarURL: state.AvatarURL,
   }),
   {
     setMemberId: child.setMemberId,
