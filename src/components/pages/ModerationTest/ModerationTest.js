@@ -109,15 +109,35 @@ const ModerationTest = props => {
               <Form.Item>
                 <Button type="primary">Load Submissions</Button>
                 <Button type="default">Remove</Button>
+                <br></br>
+                <p>
+                  1. Generate Cluster: once all 4 users have submitted their
+                  enteries
+                </p>
                 <Button type="default" onClick={cluster}>
                   Generate Cluster
                 </Button>
+                <br></br>
+                <p>
+                  2. Generate Faceoffs: after users have distributed their
+                  points
+                </p>
                 <Button type="default" onClick={faceoff}>
                   Generate Faceoffs
                 </Button>
+                <br></br>
+                <p>
+                  3. Generate Results: once votes are all counted, find out who
+                  won
+                </p>
                 <Button type="default" onClick={results}>
                   Generate Results
                 </Button>
+                <br></br>
+                <p>
+                  4. Reset Game: start a new game without clearing user
+                  submissions
+                </p>
                 <Button type="default" onClick={reset}>
                   Reset Game
                 </Button>
