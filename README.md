@@ -8,7 +8,7 @@ You can find the deployed project at: [AWS Amplify](https://d.storysquad.dev/)
 
 ## Project Overview
 
-[Frontend video](https://youtu.be/RwdSUOyeXG0)
+[Frontend video](https://youtu.be/0q3QG83gZo4)
 <br>
 [Backend video](https://youtu.be/K5k19qWKHbI)
 <br>
