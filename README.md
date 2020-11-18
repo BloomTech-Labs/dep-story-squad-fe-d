@@ -1,10 +1,10 @@
-# Story Squad Team B
+# Story Squad Team D
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/0a3a11c6f1e83568a5cf/maintainability)](https://codeclimate.com/github/Lambda-School-Labs/Labs26-StorySquad-FE-TeamB/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/0a3a11c6f1e83568a5cf/test_coverage)](https://codeclimate.com/github/Lambda-School-Labs/Labs26-StorySquad-FE-TeamB/test_coverage)
 
 [<img src="https://avatars2.githubusercontent.com/t/4044276?s=280&v=4" width="200" />](https://avatars2.githubusercontent.com/t/4044276?s=280&v=4)
 
-You can find the deployed project at: [AWS Amplify](https://b.storysquad.dev/)
+You can find the deployed project at: [AWS Amplify](https://d.storysquad.dev/)
 
 ## Project Overview
 
@@ -16,7 +16,7 @@ You can find the deployed project at: [AWS Amplify](https://b.storysquad.dev/)
 <br>
 [UX Design](https://www.figma.com/file/WaHXdLK2NASoFWYVMZLVNt/Story_Squad?node-id=962%3A211)
 <br>
-[Trello Board](https://trello.com/b/IUMvKKNf/story-squad-b-trevor)
+[Trello Board](https://trello.com/b/WgtYKaGA/story-squad-anisha)
 <br>
 [Architecture Layout](https://whimsical.com/428nXLpzshbbb32xF67Lu4)
 <br>
@@ -67,7 +67,7 @@ Redux state management
 - Centrilize your application's state and logic
 - The Redux DevTools make it easy to trace bugs
 
-### [Backend](https://story-squad-b-api.herokuapp.com) built using:
+### [Backend](https://story-squad-be-d.herokuapp.com/) built using:
 
 Express
 
@@ -124,9 +124,9 @@ Run Test
 npm test
 ```
 
-Clone and download the [banckend](https://story-squad-b-api.herokuapp.com)
+Clone and download the [backend](https://story-squad-be-d.herokuapp.com/)
 
-Follow backend [set up guides](https://github.com/Lambda-School-Labs/Labs26-StorySquad-BE-TeamB)
+Follow backend [set up guides](https://github.com/Lambda-School-Labs/story-squad-be-d)
 <br>
 <br>
 Run the application locally
@@ -188,15 +188,12 @@ See [Backend Documentation](https://story-squad-be-d.herokuapp.com/api-docs/) fo
 
 ## Contributors
 
-|                                                           [Brandon Ramirez](https://github.com/bramirez96)                                                            |                                                           [Schrese Holloway](https://github.com/Schrese)                                                            |                                                              [Nick Ohman](https://github.com/Nick-Ohman)                                                               |                                                             [James Clark](https://github.com/JLC6290)                                                              |                                                             [Sandra Coburn](https://github.com/SandraCoburn)                                                             |
+### Labs 28 Contributors
+
+|                                                           [Christian Arneson](https://github.com/christiano39)                                                            |                                                           [Bea Del Rosario](https://github.com/beaadelrosario)                                                            |                                                              [Hailey Hansard](https://github.com/haileyhansard)                                                               |                                                             [Parker Williams](https://github.com/parkster246)                                                              |                                                             [Anisha Sunkerneni](https://github.com/ars394)                                                             |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| [<img src="https://avatars3.githubusercontent.com/u/7229865?s=400&u=52b967e0ec2561de13c1bc5f3aefaf2c3730ac4d&v=4" width = "100" />Web](https://github.com/bramirez96) | [<img src="https://avatars1.githubusercontent.com/u/53787633?s=400&u=2cec780b758237d3667575b2d2a013c7e2cbc33e&v=4" width = "100" />Web](https://github.com/Schrese) | [<img src="https://avatars3.githubusercontent.com/u/59833966?s=400&u=be9ac244947874fde1b5728981c84907cab11ffd&v=4" width = "100" />Web](https://github.com/Nick-Ohman) | [<img src="https://avatars0.githubusercontent.com/u/8883829?s=400&u=7b32022acbf71282b90193bdefec8e0dbf8e9d30&v=4" width = "100" />Web](https://github.com/JLC6290) | [<img src="https://avatars2.githubusercontent.com/u/55418328?s=400&u=0e3e63b3b07d6eeea143c6aab8034a5c6c899c52&v=4" width = "100" />Web](https://github.com/SandraCoburn) |
-|                                        [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/bramirez96)                                        |                                        [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/Schrese)                                         |                                        [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/Nick-Ohman)                                         |                                        [<img src="https://github.com/favicon.ico" width="15">](https://github.com/JLC6290)                                         |                                        [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/SandraCoburn)                                         |
-|                      [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/bramirez96/)                      |                      [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/schrese/)                       |                      [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/nick-ohman/)                       |                   [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/jamesleeclark/)                   |                  [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/sandra-borunda-coburn/)                  |
+| [<img src="https://avatars0.githubusercontent.com/u/42501550?s=400&u=c750fce5d90c0da17190ba4306fed6f6281f3123&v=4" width = "100" />Web](https://github.com/christiano39) | [<img src="https://avatars3.githubusercontent.com/u/65781305?s=400&v=4" width = "100" />Web](https://github.com/beaadelrosario) | [<img src="https://avatars2.githubusercontent.com/u/64794287?s=400&u=98bf493959a7ff873fa9f9245e017c1cbb6133a6&v=4" width = "100" />Web](https://github.com/haileyhansard) | [<img src="https://avatars2.githubusercontent.com/u/66083410?s=400&u=631b0914244cd1f7d1834751e4a4374b9bfbb200&v=4" width = "100" />Web](https://github.com/parkster246) | [<img src="https://avatars1.githubusercontent.com/u/54909619?s=400&u=f9628c8197fc856a939a4d7f3914b29a7cae8eb0&v=4" width = "100" />Project Manager](https://github.com/ars394) |
+|                                        [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/christiano39)                                        |                                        [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/beaadelrosario)                                         |                                        [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/haileyhansard)                                         |                                        [<img src="https://github.com/favicon.ico" width="15">](https://github.com/parkster246)                                         |                                        [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/ars394)                                         |
+|                      [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/christianthedev/)                      |                      [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/beadelrosario/)                       |                      [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/haileyhansard/)                       |                   [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/parker-williams-dev/)                   |                  [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/anishasunkerneni/)|
 
-<!-- <br> -->
-
-|                                                                 [Lori Schlatter](https://github.com/lorischl-otter)                                                                 |                                                                 [Joseph Wilson](https://github.com/Jwilson1172)                                                                  |                                                                  [Steven Chase](https://github.com/schase15)                                                                  |                                                                  [Trevor Martin](hhttps://github.com/trevorjamesmartin)                                                                   |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| [<img src="https://avatars3.githubusercontent.com/u/15877666?s=400&u=e50a65dbfb10b6ad87cba62e96888331f0e72d89&v=4" width = "100" />Data Science](https://github.com/lorischl-otter) | [<img src="https://avatars0.githubusercontent.com/u/50245325?s=400&u=6a3aa4d49be9aa30dfefdc4f6c26c223c405473c&v=4" width = "100" />Data Science](https://github.com/Jwilson1172) | [<img src="https://avatars2.githubusercontent.com/u/61038689?s=400&u=6c3e70414c9f30a7580773bb24bce8983a96c414&v=4" width = "100" />Data Science](https://github.com/schase15) | [<img src="https://avatars2.githubusercontent.com/u/12375688?s=400&u=1de2f45b1d8113d7fb1290a029ddb66b21a945d4&v=4" width = "100" />Project Manager](https://github.com/trevorjamesmartin) |
-|                                             [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/lorischl-otter)                                             |                                             [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/Jwilson1172)                                             |                                             [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/schase15)                                             |                                               [<img src="https://github.com/favicon.ico" width="15">](https://github.com/trevorjamesmartin)                                               | (https://github.com/lorischl-otter) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://github.com/Jwilson1172) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](ttps://github.com/schase15) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://github.com/trevorjamesmartin) |
+[See Previous Contributors](labs27-contributors.md)
