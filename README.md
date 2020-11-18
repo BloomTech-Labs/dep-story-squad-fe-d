@@ -86,11 +86,12 @@ JSON Web Tokens are an industry standard authentication solution. Paired with BC
 
 ### Environment Variables
 
-In order for the app to function correctly, the user must set up their own environment variables. There should be a .env file containing the following:
+In order for the app to function correctly, the user must set up their own environment variables. Must create a .env file containing the following:
 
 ```
-*  BROWSER=none
-*  REACT_APP_ENDPOINT=http://localhost:3000
+*  REACT_APP_API_URI // This is the URL for your deployed back end on Heroku
+*  REACT_APP_CLIENT_ID // Must ask for this value
+*  REACT_APP_OKTA_ISSUER_URI // Must ask for this value
 ```
 
 ## Testing
@@ -106,9 +107,9 @@ Jest
 Clone repo
 
 ```
-git clone https://github.com/Lambda-School-Labs/Labs26-StorySquad-FE-TeamB
+git clone https://github.com/Lambda-School-Labs/story-squad-fe-d
 
-cd Labs26-StorySquad-FE-TeamB
+cd story-squad-fe-d
 ```
 
 Install Dependencies
@@ -177,7 +178,7 @@ Remember that this project is licensed under the MIT license, and by submitting 
 
 ## Documentation
 
-See [Backend Documentation](https://story-squad-b-api.herokuapp.com/api-docs/) for details on the backend of our project.
+See [Backend Documentation](https://story-squad-be-d.herokuapp.com/api-docs/) for details on the backend of our project.
 
 <br>
 
